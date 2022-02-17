@@ -12,7 +12,7 @@ bool FileUtilities::create_empty_file(const std::string& filepath) {
 bool FileUtilities::append_to_file(const std::string& filepath, const std::string& target) {
     std::ofstream outfile;
     outfile.open(filepath, std::ios_base::app);
-    if (!target.empty()) outfile << target << std::endl;
+    outfile << target << std::endl;
     outfile.close();
     return true;
 }

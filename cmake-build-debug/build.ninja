@@ -74,43 +74,43 @@ build cmake_object_order_depends_target_auth: phony || CMakeFiles/auth.dir
 
 build CMakeFiles/auth.dir/main.cpp.o: CXX_COMPILER__auth_Debug /home/noob/CLionProjects/ACL/main.cpp || cmake_object_order_depends_target_auth
   DEP_FILE = CMakeFiles/auth.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -Ofast -funroll-loops -flto -std=gnu++23
   OBJECT_DIR = CMakeFiles/auth.dir
   OBJECT_FILE_DIR = CMakeFiles/auth.dir
 
 build CMakeFiles/auth.dir/DirctoryStructureHelper/DirectoryStructureHelper.cpp.o: CXX_COMPILER__auth_Debug /home/noob/CLionProjects/ACL/DirctoryStructureHelper/DirectoryStructureHelper.cpp || cmake_object_order_depends_target_auth
   DEP_FILE = CMakeFiles/auth.dir/DirctoryStructureHelper/DirectoryStructureHelper.cpp.o.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -Ofast -funroll-loops -flto -std=gnu++23
   OBJECT_DIR = CMakeFiles/auth.dir
   OBJECT_FILE_DIR = CMakeFiles/auth.dir/DirctoryStructureHelper
 
 build CMakeFiles/auth.dir/ErrorPrinter/ErrorPrinter.cpp.o: CXX_COMPILER__auth_Debug /home/noob/CLionProjects/ACL/ErrorPrinter/ErrorPrinter.cpp || cmake_object_order_depends_target_auth
   DEP_FILE = CMakeFiles/auth.dir/ErrorPrinter/ErrorPrinter.cpp.o.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -Ofast -funroll-loops -flto -std=gnu++23
   OBJECT_DIR = CMakeFiles/auth.dir
   OBJECT_FILE_DIR = CMakeFiles/auth.dir/ErrorPrinter
 
 build CMakeFiles/auth.dir/PanicHelper/PanicHelper.cpp.o: CXX_COMPILER__auth_Debug /home/noob/CLionProjects/ACL/PanicHelper/PanicHelper.cpp || cmake_object_order_depends_target_auth
   DEP_FILE = CMakeFiles/auth.dir/PanicHelper/PanicHelper.cpp.o.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -Ofast -funroll-loops -flto -std=gnu++23
   OBJECT_DIR = CMakeFiles/auth.dir
   OBJECT_FILE_DIR = CMakeFiles/auth.dir/PanicHelper
 
 build CMakeFiles/auth.dir/TableIO/TableIO.cpp.o: CXX_COMPILER__auth_Debug /home/noob/CLionProjects/ACL/TableIO/TableIO.cpp || cmake_object_order_depends_target_auth
   DEP_FILE = CMakeFiles/auth.dir/TableIO/TableIO.cpp.o.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -Ofast -funroll-loops -flto -std=gnu++23
   OBJECT_DIR = CMakeFiles/auth.dir
   OBJECT_FILE_DIR = CMakeFiles/auth.dir/TableIO
 
 build CMakeFiles/auth.dir/FileUtilities/FileUtilities.cpp.o: CXX_COMPILER__auth_Debug /home/noob/CLionProjects/ACL/FileUtilities/FileUtilities.cpp || cmake_object_order_depends_target_auth
   DEP_FILE = CMakeFiles/auth.dir/FileUtilities/FileUtilities.cpp.o.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -Ofast -funroll-loops -flto -std=gnu++23
   OBJECT_DIR = CMakeFiles/auth.dir
   OBJECT_FILE_DIR = CMakeFiles/auth.dir/FileUtilities
 
 build CMakeFiles/auth.dir/StringUtlities/StringUtilities.cpp.o: CXX_COMPILER__auth_Debug /home/noob/CLionProjects/ACL/StringUtlities/StringUtilities.cpp || cmake_object_order_depends_target_auth
   DEP_FILE = CMakeFiles/auth.dir/StringUtlities/StringUtilities.cpp.o.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -Ofast -funroll-loops -flto -std=gnu++23
   OBJECT_DIR = CMakeFiles/auth.dir
   OBJECT_FILE_DIR = CMakeFiles/auth.dir/StringUtlities
 

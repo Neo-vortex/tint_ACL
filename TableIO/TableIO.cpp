@@ -37,9 +37,8 @@ bool TableIO::authenticate_user(const std::string &username, const std::string &
         return false;
     }
     auto user_path= FileUtilities::build_user_file_path(username);
-    auto line = FileUtilities::read_first_line_of_file(user_path);
-    std::string empty_password;
-    if ( (std::strcmp(line, password.c_str()) == 0) || (std::strcmp(line, empty_password.c_str()) == 0) ) {
+    auto line =  strtok(FileUtilities::read_first_line_of_file(user_path), "\n");
+    if (  line == nullptr || (std::strcmp(line, password.c_str()) == 0) ) {
         PanicHelper::success();
         return true;
     }

@@ -22,9 +22,9 @@ ErrorPrinter  global_error_printer;
     std::stringstream ss;
     ss  << errormap.find(code)->second ;
     if (!message.empty()){
-     ss<< " : " << message;
+     //ss<< " : " << message;  output should be standard
     }
-    global_error_printer.printerror(ss.str());
+    ErrorPrinter::printerror(ss.str());
     if (critical) exit(code);
 }
 
