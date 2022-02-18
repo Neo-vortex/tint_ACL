@@ -1,8 +1,8 @@
 #include <cstring>
-#include "DirctoryStructureHelper/DirectoryStructureHelper.h"
-#include "ErrorPrinter/ErrorPrinter.h"
-#include "PanicHelper/PanicHelper.h"
-#include "TableIO/TableIO.h"
+#include "DirectoryStructureHelper.h"
+#include "ErrorPrinter.h"
+#include "PanicHelper.h"
+#include "TableIO.h"
 void setup(int argc, char **pString) {
     if (argc <2) PanicHelper::panic_withcode(1, true);
     if (! DirectoryStructureHelper::InsureCreated()) PanicHelper::panic_withcode(0, true);

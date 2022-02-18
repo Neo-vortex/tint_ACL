@@ -1,11 +1,12 @@
 #include <filesystem>
-#include "TableIO.h"
-#include "../PanicHelper/PanicHelper.h"
-#include "iostream"
 #include <string>
+#include <iostream>
 #include <cstring>
-#include "../FileUtilities/FileUtilities.h"
-#include "../StringUtlities/StringUtilities.h"
+
+#include "TableIO.h"
+#include "PanicHelper.h"
+#include "FileUtilities.h"
+#include "StringUtilities.h"
 
 bool TableIO::user_exists(const std::string &username) {
     auto user_path= FileUtilities::build_user_file_path(username);

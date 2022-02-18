@@ -1,4 +1,4 @@
-/home/noob/Tools/clion-2021.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/noob/Tools/clion-2021.3.2/bin/ninja/linux/ninja -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G Ninja /home/noob/CLionProjects/ACL
+/home/human/cmake-3.23.0-rc1-linux-x86_64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/human/Desktop/tint_ACL
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/noob/CLionProjects/ACL/cmake-build-debug
+-- Build files have been written to: /home/human/Desktop/tint_ACL/cmake-build-debug

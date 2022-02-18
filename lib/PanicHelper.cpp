@@ -2,7 +2,7 @@
 #include <iostream>
 #include <map>
 #include "PanicHelper.h"
-#include "../ErrorPrinter/ErrorPrinter.h"
+#include "ErrorPrinter.h"
 
 std::map<int, std::string> PanicHelper::errormap = {{0, "Could not create needed directories"},
                                                     {1 , "Not enough args "} ,
