@@ -163,3 +163,9 @@ _deps
 *-prefix/
 
 # End of https://www.toptal.com/developers/gitignore/api/clion,c++,cmake
+
+### generated folders ###
+Objects
+Domains
+Users
+Types

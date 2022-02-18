@@ -381,15 +381,18 @@ done
 
 
 
-echo "##########AddAccess for Empty Operation##########"
+echo "##########AddAccess for Empty Domain##########"
 
 for i in {1..100}
 do
 echo "AddAccess operation${i}"
 result=$(./auth AddAccess operation${i})
-if [[ "$result" != "Error: missing operation" ]]
+if [[ "$result" != "Error: missing domain" ]]
 then
 echo "test failed "
 exit 0
 fi
 done
+
+echo "cleaning ..."
+./clear.sh
