@@ -17,7 +17,6 @@ std::map<int, std::string> PanicHelper::errormap = {{0, "Could not create needed
                                                     {10,"missing operation"},
                                                     {11,"access denied"}  };
 
-ErrorPrinter  global_error_printer;
  void  PanicHelper::panic_withcode( int code, bool critical , const std::string& message ) {
     std::stringstream ss;
     ss  << errormap.find(code)->second ;
