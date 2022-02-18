@@ -340,8 +340,8 @@ echo "##########AddAccess for Domain and Type##########"
 
 for i in {1..100}
 do
-echo "AddAccess  operation${i} domain${i} type${i}"
-result=$(./auth AddAccess operation${i} domain${i} type${i})
+echo "AddAccess  operation${i} userdomain${i} type${i}"
+result=$(./auth AddAccess operation${i} userdomain${i} type${i})
 if [[ "$result" != "Success" ]]
 then
 echo "test failed "
@@ -393,6 +393,29 @@ echo "test failed "
 exit 0
 fi
 done
+
+
+
+
+echo "##########CanAccess for Object and Domain##########"
+
+for i in {1..100}
+do
+echo "CanAccess  operation${i} user$i object$i"
+result=$(./auth CanAccess operation${i} user$i object$i)
+if [[ "$result" != "Success" ]]
+then
+echo "test failed "
+exit 0
+fi
+done
+
+
+
+
+
+
+
 
 echo "cleaning ..."
 ./clear.sh

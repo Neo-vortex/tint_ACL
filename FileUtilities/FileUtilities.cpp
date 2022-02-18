@@ -66,10 +66,10 @@ std::string FileUtilities::build_types_file_path(const std::string &type) {
 bool FileUtilities::check_if_line_exists(const std::string &filepath, const std::string& target) {
     char const* const fileName = filepath.c_str();
     FILE* file = fopen(fileName, "r");
-    char line[256];
+    char line[100];
     while (fgets(line, sizeof(line), file)) {
         strtok(line, "\n");
-        if (std::strcmp(line, target.c_str()) ==0) {
+        if (  std::string (line) ==  target ) {
             fclose(file);
             return true;
         }

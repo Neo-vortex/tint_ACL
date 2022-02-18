@@ -167,14 +167,15 @@ bool TableIO::add_access(const std::string &operation, const std::string &domain
         auto domain_path =   FileUtilities::build_domain_file_path(domain_name);
         FileUtilities::create_empty_file(domain_path);
     }
-    if (!type_exists(type)){
-        std::stringstream operation_string_builder;
-        operation_string_builder << operation << ":" << domain_name;
-        auto type_permission_path = FileUtilities::build_types_file_permission_path(type);
-        FileUtilities::append_to_file(type_permission_path , operation_string_builder.str());
-        auto type_path = FileUtilities::build_types_file_path(type);
+    auto type_path = FileUtilities::build_types_file_path(type);
+    auto type_permission_path = FileUtilities::build_types_file_permission_path(type);
+    if (!type_exists(type)) {
         FileUtilities::create_empty_file(type_path);
+        FileUtilities::create_empty_file(type_permission_path);
     }
+    std::stringstream operation_string_builder;
+    operation_string_builder << operation << ":" << domain_name;
+    FileUtilities::append_to_file(type_permission_path , operation_string_builder.str());
     PanicHelper::success();
     return true;
 }
