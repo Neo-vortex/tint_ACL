@@ -10,8 +10,6 @@ Welcome to the Command Line User Management Tool project! This tool is designed 
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
